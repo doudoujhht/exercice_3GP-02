@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace M2_ClassesAffaire
 {
-    internal class FormeGeometrique
+    internal abstract class FormeGeometrique
     {
+        public abstract double CalculerPerimetre();
     }
 }

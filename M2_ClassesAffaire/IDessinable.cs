@@ -8,5 +8,6 @@ namespace M2_ClassesAffaire
 {
     internal interface IDessinable
     {
+        public void DessinerObjet();
     }
 }
