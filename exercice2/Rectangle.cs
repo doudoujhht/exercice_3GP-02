@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace exercice2
 {
-    internal class Rectangle : FormeGeometrique
+    internal class Rectangle : FormeGeometrique,IDessinable
     {
         public double Longueur { get; }
         public double Largeur { get; }
@@ -31,6 +31,20 @@ namespace exercice2
         override public double CalculerPerimetre()
         {
             return (Longueur + Largeur) * 2;
+        }
+
+        public void DessinerObjet()
+        {
+            Console.WriteLine("voici le rectange");
+
+            for (int i = 0; i < Math.Ceiling(Longueur); i++)
+            {
+                for (int j = 0; j < Math.Ceiling(Largeur); j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
         }
     }
 }

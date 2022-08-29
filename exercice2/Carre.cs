@@ -13,5 +13,18 @@ namespace exercice2
         {
             this.Cote = cote;
         }
+        public new void DessinerObjet()
+        {
+            Console.WriteLine("voici le carré");
+
+            for (int i = 0; i < Math.Ceiling(Longueur); i++)
+            {
+                for (int j = 0; j < Math.Ceiling(Largeur); j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+        }
     }
 }
